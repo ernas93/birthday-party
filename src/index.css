@@ -11,10 +11,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
   min-height: 100vh;
+  font-size: 20px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  padding: 2rem;
+  max-width: 768px;
+  margin: 0 auto;
 }
