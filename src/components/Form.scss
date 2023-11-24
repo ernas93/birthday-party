@@ -2,20 +2,25 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  background-color: rgb(38, 12, 44);
+  background-color: rgb(79 64 97 / 87%);
   border-radius: 5px;
   gap: 12px;
 
   input {
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     display: block;
-    background-color: rgb(25, 7, 29);
+    background-color: rgb(38 25 46);
     outline: 0;
     border: 1px solid rgb(14, 4, 16);
     max-width: 100%;
     padding: 12px;
     flex-grow: 1;
+    font-family: 'Rajdhani', sans-serif;
+
+    &::placeholder {
+      font-family: 'Rajdhani', sans-serif;
+    }
 
     @media screen and (min-width: 528px) {
       flex-basis: 45%;
@@ -23,10 +28,13 @@
   }
 
   button {
+    font-family: 'Rajdhani', sans-serif;
+    margin: auto;
     margin-top: 30px;
     width: 100%;
     max-width: 360px;
     padding: 12px;
+    font-size: 18px;
 
     @media screen and (min-width: 528px) {
       flex-basis: 45%;

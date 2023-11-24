@@ -35,12 +35,30 @@ function Form() {
   };
 
   return hideForm ? (
-    <p>thanks</p>
+    <p>Can't wait to see you there! Refresh to add another guest.</p>
   ) : (
     <form onSubmit={onSubmit} className="form">
-      <input placeholder="First Name" type="text" name="firstName" />
-      <input placeholder="Last Name" type="text" name="lastName" />
-      <input placeholder="Email" type="email" name="email" />
+      <input
+        minLength={1}
+        placeholder="First Name"
+        type="text"
+        name="firstName"
+        required
+      />
+      <input
+        minLength={1}
+        placeholder="Last Name"
+        type="text"
+        name="lastName"
+        required
+      />
+      <input
+        minLength={1}
+        placeholder="Email"
+        type="email"
+        name="email"
+        required
+      />
       <input
         placeholder="Anything to add or song wishes:"
         type="text"
