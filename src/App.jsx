@@ -1,11 +1,12 @@
 import Form from './components/Form';
+import image from './assets/party.jpeg';
 import './App.scss';
 
 function App() {
   return (
     <>
       <div className="hero">
-        <img className="hero-image" src="/party.jpeg"></img>
+        <img className="hero-image" src={image}></img>
         <h1 className="main-heading">Dirty Thirties Birthday Party</h1>
         <h1 className="main-heading">30</h1>
       </div>
