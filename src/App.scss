@@ -1,0 +1,20 @@
+.hero-image {
+  height: 100%;
+  top: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  filter: opacity(0.4);
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 550px;
+  justify-content: center;
+  max-height: 70vh;
+}

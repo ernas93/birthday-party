@@ -1,6 +1,7 @@
 import { collection, addDoc } from '@firebase/firestore';
 import { db } from '../services/firebase';
 import { useState } from 'react';
+import './Form.scss';
 
 function Submit() {
   return (
@@ -36,19 +37,16 @@ function Form() {
   return hideForm ? (
     <p>thanks</p>
   ) : (
-    <form onSubmit={onSubmit}>
-      <label>
-        First name: <input type="text" name="firstName" />
-      </label>
-      <label>
-        Last name: <input type="text" name="lastName" />
-      </label>
-      <label>
-        Email: <input type="email" name="email" />
-      </label>
-      <label>
-        Anything to add or song wishes: <input type="text" name="comment" />
-      </label>
+    <form onSubmit={onSubmit} className="form">
+      <input placeholder="First Name" type="text" name="firstName" />
+      <input placeholder="Last Name" type="text" name="lastName" />
+      <input placeholder="Email" type="email" name="email" />
+      <input
+        placeholder="Anything to add or song wishes:"
+        type="text"
+        name="comment"
+      />
+
       <Submit />
     </form>
   );
