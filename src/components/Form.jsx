@@ -27,6 +27,7 @@ function Form() {
         lastName: formJson.lastName,
         email: formJson.email,
         comment: formJson.comment,
+        joining: formJson.joining,
       });
       setHideForm(true);
     } catch (e) {
