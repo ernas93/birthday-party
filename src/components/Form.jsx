@@ -64,7 +64,23 @@ function Form() {
         type="text"
         name="comment"
       />
-
+      <div className="radio-buttons">
+        <h4>Are you joining?</h4>
+        <label>
+          Yes <input type="radio" name="joining" value="yes" required />
+        </label>
+        <label>
+          Most likely yes
+          <input type="radio" name="joining" value="likely-yes" required />
+        </label>
+        <label>
+          Most likely no
+          <input type="radio" name="joining" value="likely-no" required />
+        </label>
+        <label>
+          No <input type="radio" name="joining" value="no" required />
+        </label>
+      </div>
       <Submit />
     </form>
   );

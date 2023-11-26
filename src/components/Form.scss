@@ -40,4 +40,21 @@
       flex-basis: 45%;
     }
   }
+
+  .radio-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    h4 {
+      margin: 10px 0 4px;
+      width: 100%;
+    }
+
+    label {
+      font-size: 18px;
+      width: calc(25% - 24px);
+      padding: 0 12px;
+    }
+  }
 }
