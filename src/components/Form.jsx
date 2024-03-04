@@ -32,6 +32,8 @@ function Form() {
       setHideForm(true);
     } catch (e) {
       console.error('Error adding document: ', e);
+      // I've hidden the form, intentionally to replicate the funcionality, as I've disabled the database
+      setHideForm(true);
     }
   };
 
